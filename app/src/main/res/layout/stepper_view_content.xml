@@ -5,13 +5,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/statusIcon"
+
+    <FrameLayout
+        android:id="@+id/statusIconContainer"
         android:layout_width="@dimen/stepper_view_content_status_icon_size"
         android:layout_height="@dimen/stepper_view_content_status_icon_size"
         android:layout_gravity="center"
-        android:background="@null"
-        android:src="@mipmap/ic_launcher" />
+        android:background="@drawable/bg_circle_error">
+
+        <ImageView
+            android:id="@+id/statusIcon"
+            android:layout_width="@dimen/stepper_view_content_status_icon_inside_size"
+            android:layout_height="@dimen/stepper_view_content_status_icon_inside_size"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@drawable/ic_stepper_view_content_error" />
+    </FrameLayout>
 
     <TextView
         android:id="@+id/instruction"

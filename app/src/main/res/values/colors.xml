@@ -7,4 +7,6 @@
     <color name="black">#000000</color>
     <color name="stepper_view_button_repeat">#5fa2e5</color>
     <color name="stepper_view_button_finish">#49cca6</color>
+    <color name="colorStepperViewError">#e47979</color>
+    <color name="colorStepperViewSuccess">#49cca6</color>
 </resources>

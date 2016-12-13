@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -31,6 +32,8 @@ public class PinPadResultView extends LinearLayout implements PinPadResultAnimat
     private PinPadResultAnimationHelper animationHelper;
 
     enum STATES {enabled, disabled, selected, finished}
+
+    enum PAYMENT_STATUS {loading, success, error}
 
     //Indicator
     @Bind(R.id.stage1TextNumber)
@@ -60,7 +63,10 @@ public class PinPadResultView extends LinearLayout implements PinPadResultAnimat
     protected View contentContainer;
     @Bind(R.id.statusIcon)
     protected ImageView statusIcon;
-
+    @Bind(R.id.statusIconContainer)
+    protected FrameLayout statusIconContainer;
+    @Bind(R.id.instruction)
+    protected TextView instruction;
 
     public PinPadResultView(Context context) {
         super(context);
@@ -227,13 +233,39 @@ public class PinPadResultView extends LinearLayout implements PinPadResultAnimat
             setStageEnabled(STATES.disabled, STAGE3);
 
             currentStage = STAGE2;
+            updateStage2Status(PAYMENT_STATUS.loading);
         } else if (currentStage == STAGE2) {
             setStageEnabled(STATES.selected, STAGE1);
             setStageEnabled(STATES.disabled, STAGE2);
             setStageEnabled(STATES.disabled, STAGE3);
 
+            updateStage2Status(PAYMENT_STATUS.success);
             currentStage = STAGE1;
         }
+    }
+
+    public void updateStage2Status(PAYMENT_STATUS status) {
+        if (currentStage != STAGE2) {
+            return;
+        }
+        switch (status) {
+            case error:
+                statusIcon.setImageDrawable(ContextCompat.getDrawable(getContext(), R.drawable.ic_stepper_view_content_error));
+                statusIconContainer.setBackground(ContextCompat.getDrawable(getContext(), R.drawable.bg_circle_error));
+                instruction.setText(getResources().getString(R.string.stepper_view_instruction_2_error));
+                break;
+            case success:
+                statusIcon.setImageDrawable(ContextCompat.getDrawable(getContext(), R.drawable.ic_stepper_view_content_succes));
+                statusIconContainer.setBackground(ContextCompat.getDrawable(getContext(), R.drawable.bg_circle_success));
+                instruction.setText(getResources().getString(R.string.stepper_view_instruction_2_success));
+                break;
+            case loading:
+                statusIcon.setImageDrawable(ContextCompat.getDrawable(getContext(), R.drawable.ic_stepper_view_content_succes));
+                statusIconContainer.setBackground(ContextCompat.getDrawable(getContext(), R.drawable.bg_circle_success));
+                instruction.setText(getResources().getString(R.string.stepper_view_instruction_2_loading));
+                break;
+        }
+
     }
 
 }
