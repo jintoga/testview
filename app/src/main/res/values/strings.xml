@@ -19,7 +19,7 @@
     <string name="drawer_print_reports">Print reports</string>
 
 
-    <string name="stepper_view_instruction_1">Вставьте карту, следуйте инструкции на пин-пиде</string>
+    <string name="stepper_view_instruction_1">Вставьте карту, следуйте инструкции на пин-паде</string>
     <string name="stepper_view_instruction_2_error">Ошибка платежа</string>
     <string name="stepper_view_instruction_2_success">Успешная оплата!</string>
     <string name="stepper_view_instruction_2_loading">Обработка платежа&#8230;</string>

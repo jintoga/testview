@@ -6,7 +6,7 @@
     <dimen name="stepper_indicator_icon_size">28dp</dimen>
     <dimen name="stepper_indicator_divider_width">0dp</dimen>
     <dimen name="stepper_view_content_status_icon_size">140dp</dimen>
-    <dimen name="stepper_view_content_description_text_size">14sp</dimen>
+    <dimen name="stepper_view_content_description_text_size">13sp</dimen>
     <dimen name="stepper_view_content_instruction_text_size">26sp</dimen>
     <dimen name="stepper_view_content_button_height">50dp</dimen>
     <dimen name="stepper_view_content_button_margin">24dp</dimen>
