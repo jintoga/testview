@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Material Drawer Experiment</string>
+    <string name="drawer_main">Home</string>
+    <string name="drawer_reports">Reports</string>
+    <string name="drawer_favorites">Favorites</string>
+    <string name="drawer_settings">Settings</string>
+    <string name="drawer_feedback">Feedback</string>
+    <string name="drawer_block">Block</string>
+    <string name="drawer_logout">Logout</string>
+    <string name="drawer_catalog">Catalog</string>.
+    <string name="drawer_free_price">Free price</string>
+
+    <!--DAT's drawer items-->
+    <string name="drawer_close_shift">Close shift</string>
+    <string name="drawer_message_center">Message center</string>
+    <string name="drawer_update_catalog">Update catalog</string>
+    <string name="drawer_order_list">Order list</string>
+    <string name="drawer_customer_list">Customer list</string>
+    <string name="drawer_print_reports">Print reports</string>
+
+
+    <string name="stepper_view_instruction_1">Вставьте карту, следуйте инструкции на пин-пиде</string>
+    <string name="stepper_view_instruction_2_error">Ошибка платежа</string>
+    <string name="stepper_view_instruction_2_success">Успешная оплата!</string>
+    <string name="stepper_view_instruction_2_loading">Обработка платежа&#8230;</string>
+</resources>
