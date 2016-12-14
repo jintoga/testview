@@ -7,19 +7,26 @@
 
 
     <FrameLayout
-        android:id="@+id/statusIconContainer"
-        android:layout_width="@dimen/stepper_view_content_status_icon_size"
-        android:layout_height="@dimen/stepper_view_content_status_icon_size"
-        android:layout_gravity="center"
-        android:background="@drawable/bg_circle_error">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
         <ImageView
             android:id="@+id/statusIcon"
-            android:layout_width="@dimen/stepper_view_content_status_icon_inside_size"
-            android:layout_height="@dimen/stepper_view_content_status_icon_inside_size"
+            android:layout_width="@dimen/stepper_view_content_status_icon_size"
+            android:layout_height="@dimen/stepper_view_content_status_icon_size"
             android:layout_gravity="center"
-            android:background="@null"
+            android:background="@drawable/bg_circle_error"
+            android:padding="30dp"
             android:src="@drawable/ic_stepper_view_content_error" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="@dimen/stepper_view_content_status_icon_size"
+            android:layout_height="@dimen/stepper_view_content_status_icon_size"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/bg_stepper_view_progress_bar" />
     </FrameLayout>
 
     <TextView
