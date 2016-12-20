@@ -10,4 +10,15 @@
     <color name="colorStepperViewError">#e47979</color>
     <color name="colorStepperViewSuccess">#49cca6</color>
     <color name="colorStepperViewSuccessTransparent_35">#5949cca6</color>
+
+
+    <color name="background">#ecf1f5</color>
+    <color name="hole_color">#bcc6d2</color>
+    <color name="darker_gray_75">#BFAAAAAA</color>
+    <color name="darker_gray_50">#80AAAAAA</color>
+    <color name="darker_gray_25">#40AAAAAA</color>
+
+    <color name="shadow_color_10">#1A919aa3</color>
+    <color name="shadow_color_25">#40919aa3</color>
+    <color name="shadow_color_50">#80919aa3</color>
 </resources>
