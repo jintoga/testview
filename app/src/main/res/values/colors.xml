@@ -14,10 +14,8 @@
 
     <color name="background">#ecf1f5</color>
     <color name="hole_color">#bcc6d2</color>
-    <color name="darker_gray_75">#BFAAAAAA</color>
-    <color name="darker_gray_50">#80AAAAAA</color>
-    <color name="darker_gray_25">#40AAAAAA</color>
 
+    <color name="shadow_color_75">#BF919aa3</color>
     <color name="shadow_color_10">#1A919aa3</color>
     <color name="shadow_color_25">#40919aa3</color>
     <color name="shadow_color_50">#80919aa3</color>
