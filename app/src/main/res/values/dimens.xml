@@ -18,4 +18,6 @@
     <dimen name="stepper_view_content_button_margin_between">2dp</dimen>
     <dimen name="stepper_view_content_button_text_size">10sp</dimen>
     <dimen name="stepper_view_content_progress_bar_inner_radius">60dp</dimen>
+
+    <dimen name="cheque_view_zigzag_bottom_height">4dp</dimen>
 </resources>

@@ -15,6 +15,9 @@
     <color name="background">#ecf1f5</color>
     <color name="hole_color">#bcc6d2</color>
 
+    <color name="zigzag_shadow_color_start">#37000000</color>
+    <color name="zigzag_shadow_color_center">#23000000</color>
+    <color name="zigzag_shadow_color_end">#0b000000</color>
     <color name="shadow_color_75">#BF919aa3</color>
     <color name="shadow_color_10">#1A919aa3</color>
     <color name="shadow_color_25">#40919aa3</color>

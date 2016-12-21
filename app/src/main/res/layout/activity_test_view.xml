@@ -31,23 +31,40 @@
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-1dp"
             android:layout_marginLeft="28dp"
             android:layout_marginRight="28dp"
             android:layout_marginTop="-4dp"
+            android:clipToPadding="false"
+            android:gravity="center_horizontal"
+            app:cardBackgroundColor="@color/background"
             app:cardPreventCornerOverlap="false"
             app:cardUseCompatPadding="true">
 
             <WebView
                 android:id="@+id/cheque"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="6dp"
                 android:background="@drawable/bg_cheque_capsule_shadow_line_inside" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cheque_view_zigzag_bottom_height"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg_cheque_zigzag_shadow" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cheque_view_zigzag_bottom_height"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_cheque_zigzag" />
         </android.support.v7.widget.CardView>
 
         <View
