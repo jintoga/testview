@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="16dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|start"
+            android:layout_weight="0.4"
+            android:fontFamily="sans-serif-light"
+            android:gravity="start"
+            android:text="@string/payment_result_info_view_service"
+            android:textColor="@color/black_65"
+            android:textSize="@dimen/partial_info_view_text_size_sum"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/infoViewPaymentService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="0.6"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="59 .00 safasfas fas fasf as fasfasffasfas590fasfasfasf asf asffsa as fasf asf asf asfР"
+            android:textColor="@color/black_70"
+            android:textSize="@dimen/partial_info_view_text_size_sum_value"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|start"
+            android:layout_weight="0.4"
+            android:fontFamily="sans-serif-light"
+            android:gravity="start"
+            android:text="@string/payment_result_info_view_payment_number"
+            android:textColor="@color/black_65"
+            android:textSize="@dimen/partial_info_view_text_size_sum"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/infoViewPaymentNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="0.6"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="59 59safasfas fas fasf as fasfР"
+            android:textColor="@color/black_70"
+            android:textSize="@dimen/partial_info_view_text_size_sum_value"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|start"
+            android:layout_weight="0.4"
+            android:fontFamily="sans-serif-light"
+            android:gravity="start"
+            android:text="@string/payment_result_info_view_sum"
+            android:textColor="@color/black_65"
+            android:textSize="@dimen/partial_info_view_text_size_sum"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/infoViewTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="0.6"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="59 590safass fasf asf asf a.00 Р"
+            android:textColor="@color/black_70"
+            android:textSize="@dimen/partial_info_view_text_size_sum_value"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|start"
+            android:layout_weight="0.4"
+            android:fontFamily="sans-serif-light"
+            android:gravity="start"
+            android:text="@string/payment_result_info_view_total_in"
+            android:textColor="@color/black_65"
+            android:textSize="@dimen/partial_info_view_text_size_sum"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/infoViewTotalIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="0.6"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="59 59asfasfasf asf asffsa as fasf asf asf a0 Р"
+            android:textColor="@color/black_70"
+            android:textSize="@dimen/partial_info_view_text_size_sum_value"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|start"
+            android:layout_weight="0.4"
+            android:fontFamily="sans-serif-light"
+            android:gravity="start"
+            android:text="@string/payment_result_info_view_short_change"
+            android:textColor="@color/black_65"
+            android:textSize="@dimen/partial_info_view_text_size_sum"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/infoViewShortChange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="0.6"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="5 Р"
+            android:textColor="@color/black_70"
+            android:textSize="@dimen/partial_info_view_text_size_sum_value"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

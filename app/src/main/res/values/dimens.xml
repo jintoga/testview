@@ -20,4 +20,9 @@
     <dimen name="stepper_view_content_progress_bar_inner_radius">60dp</dimen>
 
     <dimen name="cheque_view_zigzag_bottom_height">4dp</dimen>
+
+
+    <dimen name="partial_info_view_text_size_order_id">28sp</dimen>
+    <dimen name="partial_info_view_text_size_sum">20sp</dimen>
+    <dimen name="partial_info_view_text_size_sum_value">22sp</dimen>
 </resources>

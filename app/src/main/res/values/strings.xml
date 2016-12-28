@@ -23,4 +23,12 @@
     <string name="stepper_view_instruction_2_error">Ошибка платежа</string>
     <string name="stepper_view_instruction_2_success">Успешная оплата!</string>
     <string name="stepper_view_instruction_2_loading">Обработка платежа&#8230;</string>
+
+
+    <string name="partial_info_view_send_cheque">Отправка чека</string>
+    <string name="payment_result_info_view_sum">Сумма:</string>
+    <string name="payment_result_info_view_service">Способ оплаты:</string>
+    <string name="payment_result_info_view_payment_number">Номер платежа:</string>
+    <string name="payment_result_info_view_total_in">Получено от клиента:</string>
+    <string name="payment_result_info_view_short_change">Сдача:</string>
 </resources>

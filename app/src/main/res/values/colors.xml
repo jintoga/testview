@@ -22,4 +22,11 @@
     <color name="shadow_color_10">#1A919aa3</color>
     <color name="shadow_color_25">#40919aa3</color>
     <color name="shadow_color_50">#80919aa3</color>
+
+
+    <color name="info_view_divider">#61000000</color>
+    <color name="email_phone_text_hint">#61000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_65">#A6000000</color>
+    <color name="contact_phone_color">#61000000</color>
 </resources>

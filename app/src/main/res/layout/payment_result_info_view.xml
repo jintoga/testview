@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:src="@drawable/ic_info_view_payment_success" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Заказ NasfasjfjNasfasjfjaskfljaasfNasfasjfjaskfljaa Успешно Оплачен"
+            android:textColor="@color/black"
+            android:textSize="@dimen/partial_info_view_text_size_order_id" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/info_view_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Сумма:"
+            android:textColor="@color/black_65"
+            android:textSize="@dimen/partial_info_view_text_size_sum"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="59 590.00 Р"
+            android:textColor="@color/black_70"
+            android:textSize="@dimen/partial_info_view_text_size_sum_value"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/info_view_divider" />
+
+    <include layout="@layout/partial_payment_result_info_view_send_cheque" />
+</LinearLayout>

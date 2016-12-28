@@ -21,4 +21,12 @@
     <style name="StepperIndicatorTextSelectedTheme">
         <item name="android:textColor">@android:color/primary_text_light</item>
     </style>
+
+    <style name="EditTextEmailPhoneTheme" parent="Widget.AppCompat.EditText">
+        <item name="colorAccent">@color/colorStepperViewSuccess</item>
+    </style>
+
+    <style name="ButtonSendChequeTheme" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorStepperViewSuccess</item>
+    </style>
 </resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:text="@string/partial_info_view_send_cheque"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginBottom="0.1dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_underline_tablayout"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorStepperViewSuccess"
+            app:tabIndicatorHeight="2dp"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorStepperViewSuccess"
+            app:tabTextColor="@color/md_grey_500">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-MAIL" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ТЕЛЕФОН" />
+        </android.support.design.widget.TabLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <ViewAnimator
+                android:id="@+id/emailOrPhoneAnimator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.dat.materialdrawerexperiment.view.PaymentResultInfoSendChequeEmailView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.dat.materialdrawerexperiment.view.PaymentResultInfoSendChequePhoneView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </ViewAnimator>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.05"
+                android:text="отправить"
+                android:textColor="@color/white"
+                android:theme="@style/ButtonSendChequeTheme" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

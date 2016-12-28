@@ -9,8 +9,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".PaymentStepActivity"></activity>
-        <activity android:name=".TestViewActivity">
+        <activity android:name=".PaymentStepActivity" />
+        <activity android:name=".TestViewActivity" />
+        <activity android:name=".TestView2Activity"></activity>
+        <activity android:name=".TestView3Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
